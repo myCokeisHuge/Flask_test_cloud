@@ -1,5 +1,5 @@
 # user created file imports
-from app_code.db import db
+from db import db
 
 
 class StoreModel(db.Model):

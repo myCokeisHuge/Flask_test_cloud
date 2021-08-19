@@ -5,10 +5,10 @@ from flask_jwt import JWT
 
 
 # user created file imports
-from app_code.security import authenticate, identity
-from app_code.resources.user import UserRegister
-from app_code.resources.item import Item, ItemList
-from app_code.resources.store import Store, StoreList
+from security import authenticate, identity
+from resources.user import UserRegister
+from resources.item import Item, ItemList
+from resources.store import Store, StoreList
 
 
 app = Flask(__name__)
@@ -28,6 +28,6 @@ api.add_resource(UserRegister, '/register')  # 'UserRegister' class in user.py
 
 
 if __name__ == '__main__':  # prevents app from executing if this file is imported into another
-    from app_code.db import db
+    from db import db
     db.init_app(app)
     app.run(port=5000, debug=False)

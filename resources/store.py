@@ -1,5 +1,5 @@
 from flask_restful import Resource, reqparse
-from app_code.models.store import StoreModel
+from models.store import StoreModel
 
 
 class Store(Resource):

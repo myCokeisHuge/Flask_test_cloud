@@ -1,3 +1,10 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/html.html
+/McStories.db
+/McStoriesScraper.txt
+/pyvenv.cfg
+/scraper_log.txt
+/skip_list.txt
+/test.py
